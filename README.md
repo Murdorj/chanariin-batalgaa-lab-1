@@ -37,17 +37,18 @@
    ```
 
 2. Тестийг ажиллуулах:
-
+```
 mvn clean test
+```
 
 3. Хэрэв .env ашиглахгүйгээр команд дээрээс дамжуулах бол:
-
+```
 MUST_USER=B222270810 MUST_PASS=MyPassword mvn clean test
-
+```
 эсвэл
-
+```
 mvn clean test -DMUST_USER=B222270810 -DMUST_PASS=MyPassword
-
+```
 ## Тестийн урсгал
 
 1. Login – Username/Password талбаруудыг бөглөж “Нэвтрэх” товч дарах
