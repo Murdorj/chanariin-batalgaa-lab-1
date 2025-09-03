@@ -30,11 +30,11 @@
    MUST_USER=B222270810
    MUST_PASS=MyPassword
 
-Тестийг ажиллуулах:
+2) Тестийг ажиллуулах:
 
 mvn clean test
 
-Хэрэв .env ашиглахгүйгээр команд дээрээс дамжуулах бол:
+3) Хэрэв .env ашиглахгүйгээр команд дээрээс дамжуулах бол:
 
 MUST_USER=B222270810 MUST_PASS=MyPassword mvn clean test
 
@@ -43,32 +43,32 @@ MUST_USER=B222270810 MUST_PASS=MyPassword mvn clean test
 mvn clean test -DMUST_USER=B222270810 -DMUST_PASS=MyPassword
 
 
- Тестийн урсгал
+## Тестийн урсгал
 
-Login – Username/Password талбаруудыг бөглөж “Нэвтрэх” товч дарах
+1) Login – Username/Password талбаруудыг бөглөж “Нэвтрэх” товч дарах
 
-Modal хаах – Login дараа гарч ирэх Bootstrap modal-ийн backdrop дээр JS click хийж хаах
+2) Modal хаах – Login дараа гарч ирэх Bootstrap modal-ийн backdrop дээр JS click хийж хаах
 
-Assertions
+3) Assertions
 
-Хуудас дээр “Хувийн мэдээлэл” харагдах ёстой
+    - Хуудас дээр “Хувийн мэдээлэл” харагдах ёстой
 
-“Оюутны код: …” блок дахь .text-ийн утга нь MUST_USER-тэй яг тэнцүү байх ёстой
+    - “Оюутны код: …” блок дахь .text-ийн утга нь MUST_USER-тэй яг тэнцүү байх ёстой
 
-Logout – “Гарах” товчийг дарж, login талбар/“Нэвтрэх” текст дахин харагдахыг баталгаажуулах
+4) Logout – “Гарах” товчийг дарж, login талбар/“Нэвтрэх” текст дахин харагдахыг баталгаажуулах
 
 
- Ашигласан гол locator-ууд
+## Ашигласан гол locator-ууд
 
-Username: input#UserName, input[name='UserName']
+- Username: input#UserName, input[name='UserName']
 
-Password: input#Password, input[name='Password']
+- Password: input#Password, input[name='Password']
 
-Login button: input[type='submit'][value='Нэвтрэх'], button[type='submit']
+- Login button: input[type='submit'][value='Нэвтрэх'], button[type='submit']
 
-Modal backdrop: div.modal-backdrop
+- Modal backdrop: div.modal-backdrop
 
-Оюутны код (XPath):
+- Оюутны код (XPath):
 
 //div[@class='title' and normalize-space()='Оюутны код:']
      /following-sibling::div[contains(@class,'text')]
