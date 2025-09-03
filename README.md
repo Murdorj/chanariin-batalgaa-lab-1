@@ -56,8 +56,6 @@ mvn clean test -DMUST_USER=B222270810 -DMUST_PASS=MyPassword
 
 ---
 
----
-
 ## Тестийн урсгал
 
 1. Login – Username/Password талбаруудыг бөглөж “Нэвтрэх” товч дарах
@@ -71,8 +69,6 @@ mvn clean test -DMUST_USER=B222270810 -DMUST_PASS=MyPassword
    - “Оюутны код: …” блок дахь .text-ийн утга нь MUST_USER-тэй яг тэнцүү байх ёстой
 
 4. Logout – “Гарах” товчийг дарж, login талбар/“Нэвтрэх” текст дахин харагдахыг баталгаажуулах
-
----
 
 ---
 
