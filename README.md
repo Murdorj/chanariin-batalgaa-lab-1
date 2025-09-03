@@ -9,12 +9,14 @@
 
 ## Төслийн бүтэц
 
+```
 ├── pom.xml
 ├── .gitignore
-├── .env # MUST_USER, MUST_PASS энд хадгална (commit хийхгүй)
+├── .env    # MUST_USER, MUST_PASS энд хадгална (commit хийхгүй)
 └── src/
-└── test/
-└── java/com/example/LoginTest.java
+    └── test/
+        └── java/com/example/LoginTest.java
+```
 
 ---
 
