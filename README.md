@@ -90,5 +90,3 @@ mvn clean test -DMUST_USER=B222270810 -DMUST_PASS=MyPassword
 
 Logout: //span[normalize-space()='Гарах']/ancestor::a
 ```
-
----
