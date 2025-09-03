@@ -18,7 +18,7 @@
 
 ---
 
-##  Урьдчилсан шаардлага
+## Урьдчилсан шаардлага
 
 - Java 17+
 - Maven 3+
@@ -26,7 +26,7 @@
 
 ---
 
-##  Ажиллуулах
+## Ажиллуулах
 
 1. Төслийн root дээр `.env` файл үүсгэнэ:
 
@@ -37,18 +37,27 @@
    ```
 
 2. Тестийг ажиллуулах:
+
 ```
 mvn clean test
 ```
 
 3. Хэрэв .env ашиглахгүйгээр команд дээрээс дамжуулах бол:
+
 ```
 MUST_USER=B222270810 MUST_PASS=MyPassword mvn clean test
 ```
+
 эсвэл
+
 ```
 mvn clean test -DMUST_USER=B222270810 -DMUST_PASS=MyPassword
 ```
+
+---
+
+---
+
 ## Тестийн урсгал
 
 1. Login – Username/Password талбаруудыг бөглөж “Нэвтрэх” товч дарах
@@ -62,6 +71,10 @@ mvn clean test -DMUST_USER=B222270810 -DMUST_PASS=MyPassword
    - “Оюутны код: …” блок дахь .text-ийн утга нь MUST_USER-тэй яг тэнцүү байх ёстой
 
 4. Logout – “Гарах” товчийг дарж, login талбар/“Нэвтрэх” текст дахин харагдахыг баталгаажуулах
+
+---
+
+---
 
 ## Ашигласан гол locator-ууд
 
@@ -81,3 +94,5 @@ mvn clean test -DMUST_USER=B222270810 -DMUST_PASS=MyPassword
 
 Logout: //span[normalize-space()='Гарах']/ancestor::a
 ```
+
+---
